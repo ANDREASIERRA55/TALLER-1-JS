@@ -9,6 +9,7 @@ let car = {
 
 }
 car.atributos[1] = "hermoso";
-car.precio = 100€;
-console.log car;
+car.precio = 100;
+console.log (car);
+document.write (car);
 
