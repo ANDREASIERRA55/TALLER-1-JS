@@ -1,29 +1,26 @@
-let operando1, operando2, suma, resta, multiplicar, dividir;
-operando1 = 20;
-operando2 = 30;
 
-suma = (operando1 + operando2);{
+const operando1 = 20;
+const operando2 = 30;
+
+suma = operando1 + operando2;
+    console.log(typeof suma);
     console.log(suma);
-    document.write(suma);   
-}
-
-
-resta = (operando1 - operando2);{
+      
+resta = operando1 - operando2;
+    console.log(typeof resta);   
     console.log(resta);
-    document.write(resta);
-}
+    
 
-
-multiplicar = (operando1 * operando2);{
+multiplicar = operando1 * operando2;
+    console.log(typeof multiplicar);
     console.log (multiplicar);
-    document.write(multiplicar);
-}
+    
 
-
-dividir = (operando1 / operando2);{
+dividir = operando1 / operando2;
+    console.log(typeof suma);
     console.log(dividir);
-    document.write(dividir);
-}
+    
+
 
 
 

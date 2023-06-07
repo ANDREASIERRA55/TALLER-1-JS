@@ -2,7 +2,7 @@ console.log("hola");
 
 let nombre = "Andrea";
 console.log(nombre);
-document.write(nombre);
+document.innertHtml(nombre);
 
 let num1 = 5;
 let num2 = 2;

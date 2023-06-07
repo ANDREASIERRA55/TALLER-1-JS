@@ -1,37 +1,31 @@
 
 
-let equipoDAnombres = ["maria","carlos","luis","victor","sonia","david","nafisa","leolito","javi","cesar"];
-let equipoDAnumeros = ["1","2","3","4","5","6","7","8","9","10"]
+const equipoDAnombres = ["maria","carlos","luis","victor","sonia","david","nafisa","leolito","javi","cesar"];
+const equipoDAnumeros = [1,2,3,4,5,6,7,8,9,10]
 console.log(equipoDAnombres.equipoDAnumeros);
-document.write(equipoDAnombres.equipoDAnumeros)
 
-//Crear una función que añada un número al array//
 
-for (equipoDAnumeros i = 0; i < 9; i++) {
-    // n += i;
-    // function(n);
+for ( let i = 0; i < equipoDAnombres.length; i++){
+     
+    const element = equipoDAnombres[i];
+    console.log(element); 
 }
-let nuevaLongitud = equipoDAnumeros.push('20')
-
-let ultimo = equipoDAnumeros.pop('20') 
+//Crear una función que añada un número al array//
+let nuevaLongitud = equipoDAnumeros.push(20)
 
 //Crear una función que elimine los números pares de ese array.//
-
 let array = [1,2,3,4,5,6,7,8,9,10];
-let pares = [2,4,6,8,10];
-let impares = [1,3,5,7,9,];
+let pares = [];
+let impares = [];
 let i=1;
 
-for(let i= 0;i<pares.length;i++){
-    if(i % 2 ==0){
-        pares.pop(array[i]);
-    }
-    else{
-        impares.push(array[i]);
+for(let i= 0;i<array.length;i++){
+    if(array[i] % 2 ==0){
+        array.splice(i,1);
     }
 }
 
-console.log("Los numeros pares son " + pares);
+console.log(array);
 console.log("Los numeros impares son " + impares);
 
 //Crear una función que devuelva el número mayor de un array.//
@@ -54,7 +48,7 @@ function minimo(equipoDAnumeros) {
     if (toString.call(equipoDAnumeros) !== "[0bject array]") {
         return null;
     }
-    if (!equipoDAnumeros.every(e=minimo typeof e == "number")) {
+    if (!equipoDAnumeros.every(e=minimo  == "number")) {
         return null;
     }
     return Math.min.apply(null, equipoDAnumeros);
@@ -81,8 +75,10 @@ console.log(tolowerCase.toUpperCase(["maria","carlos","luis","victor","sonia","d
 
 //Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en mayúscula//
 
-function primeraLetra(sequipoDAnombres){
-        return str[0].toUpperCase() + str.slice(1);
-    }
+let listaDeUsuarios
+ 
+// function primeraLetra(sequipoDAnombres){
+//         return str[0].toUpperCase() + str.slice(1);
+//     }
    
-   console.log(primeraLetra('h"maria","carlos","luis","victor","sonia","david","nafisa","leolito","javi","cesar"));
+//    console.log(primeraLetra('h"maria","carlos","luis","victor","sonia","david","nafisa","leolito","javi","cesar"));
